@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aprendiendo Bootstrap</title>
+  <link rel="icon" type="image/png" href="assets/images/logo-black.png" />
 
   <!-- Bootstrap CSS -->
   <link
@@ -26,6 +27,16 @@
   <style>
     body {
       font-family: 'Roboto', sans-serif;
+    }
+
+    /* Mejora 1: Efecto Hover en Cards */
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -219,6 +230,13 @@
 
     <!-- Logo negro -->
     <img src="assets/images/logo-black.png" alt="Logo" class="img-fluid mb-3" style="height: 40px;">
+
+    <!-- Mejora 2: Redes Sociales -->
+    <div class="mb-4">
+      <a href="#" class="text-secondary text-decoration-none me-3 fs-4"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-secondary text-decoration-none me-3 fs-4"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-secondary text-decoration-none fs-4"><i class="bi bi-instagram"></i></a>
+    </div>
 
     <!-- Texto de derechos -->
     <p class="mb-0" style="font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16pt;">
